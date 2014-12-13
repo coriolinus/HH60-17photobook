@@ -1,4 +1,13 @@
-# Reference material; don't want to sync it.
+# Auto-generated LaTeX intermediary files
+*.aux
+*.log
+*.out
+*.synctex.gz
+
+# Test images which aren't going to appear in the final product
+Images/avionics-bay.jpg
+
+# Reference material; don't want to sync it
 Reference
 
 # Windows image file caches
