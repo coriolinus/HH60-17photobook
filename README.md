@@ -26,3 +26,5 @@ can simply put it on their personal tablets and click happily away. It must also
 fully and easily usable when printed out and put into a binder. I'd also like to get all
 source material permanently online, so that the next guy who's stuck updating the book doesn't have
 to do it entirely from scratch the way I am. 
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
