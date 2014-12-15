@@ -1,5 +1,7 @@
 # HH-60 DA 2408-17 Photo Guide
 
+## What is this?
+
 A -17 inventory is a comprehensive inventory of aircraft components, used whenever control of the 
 aircraft is turned over to another party: before and after depot-level maintenance, for example. 
 
@@ -28,3 +30,15 @@ source material permanently online, so that the next guy who's stuck updating th
 to do it entirely from scratch the way I am. 
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+
+## Build Notes
+
+One feature of this project which makes it more complex than it could have been is the fact that 
+there are two indices with different sort orders. This could be handled manually, at the cost of 
+increased difficulty when updating the document. I chose instead to handle the data only once, and
+generate the two indices programatically. 
+
+`sectionN.csv` are precursor files containing the raw data for each section index: the Item number, 
+the Nomenclature, the Figure reference. Run `csv2tex.py` using Python 3, without any arguments, to 
+generate the appropriate section indices which will be included into the final document when LaTeX
+is run.

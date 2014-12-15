@@ -1,3 +1,13 @@
+# ========================
+# project stuff
+# ========================
+
+# Python bytecode
+*.pyc
+
+# Auto-generated sections
+section??.tex
+
 # Auto-generated LaTeX intermediary files
 *.aux
 *.log
