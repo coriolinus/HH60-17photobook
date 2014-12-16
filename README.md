@@ -42,3 +42,14 @@ generate the two indices programatically.
 the Nomenclature, the Figure reference. Run `csv2tex.py` using Python 3, without any arguments, to 
 generate the appropriate section indices which will be included into the final document when LaTeX
 is run.
+
+Efficiently adding images is a bit of a bear. The best workflow I've come up with so far:
+
+1. Mess with contrast / exposure / crop / etc. in [Adobe Lightroom](http://www.adobe.com/products/photoshop-lightroom.html)
+2. Export to .jpg (possibly to a temporary directory)
+3. If markup is necessary:
+	3. Import as raster into [Inkscape](https://www.inkscape.org/en/)
+	4. Add markup as necessary to hilight relevant parts
+	5. Export bitmap as .png
+5. Add image definition to `figures.csv`
+6. Add relevant figure entries into `sectionN.csv`

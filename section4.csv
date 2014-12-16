@@ -1,8 +1,8 @@
 Item,Nomenclature,Figure
-1,"VOR/ILS Antenna, AS-3526/A(VT11-333A)",
-2,"HF Antenna, 70600-85320-141",
-3,"HF Antenna Element Aft, 4200626-30",
-4,"HF Antenna Element Fwd, 4200626-30",
-5,"Electronics Module Assy(M130), 9311431",
-6,"Dispenser Assy, 9311434",
-7,"Payload Module Assy (M130), 9311451",
+1,"VOR/ILS Antenna, AS-3526/A(VT11-333A)",profile-ants,3
+2,"HF Antenna, 70600-85320-141",profile-ants,1\&2
+3,"HF Antenna Element Aft, 4200626-30",profile-ants,2
+4,"HF Antenna Element Fwd, 4200626-30",profile-ants,1
+5,"Electronics Module Assy(M130), 9311431",m130,2
+6,"Dispenser Assy, 9311434",m130,3
+7,"Payload Module Assy (M130), 9311451",m130,4
