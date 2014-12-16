@@ -4,3 +4,23 @@ vhf-coupler,vhf-ant-coupler.png,VHF-FM \#1 Coupler Ant
 t-c-ant,t-c-ant.png,VHF-FM Troop Commander Antenna
 profile-ants,profile-ants.png,Tail Cone Antennae
 m130,m130-system.png,M130 Countermeasure Dispenser System
+transition-hatch,transition-hatch.jpg,Transition section avionics bay hatch. Located behind the right-side cargo door.
+stormscope-processor,stormscope-processor.jpg,"Stormscope Processor. Located inside the transition section, toward the upper right side, looking toward the tail."
+modem-communications,modem-communications.jpg,"Modem, Communications. Located inside the transition section."
+cabin-upper,cabin-upper.png,Upper Cabin. Soundproofing removed.
+esu-apu,esu-apu.jpg,"Electronic Sequencing Unit, APU. Located in upper cabin section, behind soundproofing."
+transition-floor,transition-floor.png,Transition Section interior floor.
+rt1704,rt1704.jpg,"VHF-AM Rec/Trans, RT-1704/ARC-222"
+rt1614,rt1614.jpg,"UHF-AM Rec/Trans, RT-1614/ARC-164"
+mt4838,mt4838.jpg,"UHF-AM Mount Base Rec/Trans, MT-4838/ARC-164. Generally located immediately under RT-1614/ARC-164 (Fig. \ref{rt1614})"
+adf-loop-ant,adf-loop-ant.jpg,"ADF Loop Antenna, AS-3933/ARN-149 and AS-4480/ARN-149. Directly aft of the sling hook, under the aircraft."
+tcir,tail-cone-interior-rear.png,"Rear interior of tail cone"
+fuel-sampler,fuel-sampler.jpg,"Fuel Sampler pump and hose"
+alq144,alq144.jpg,"Transmitter Countermeasures, ALQ-144"
+top-rear,acft-top-rear.png,"Upper rear section of the aircraft."
+uhf-am-ant,uhf-am-ant.jpg,"UHF-AM Antenna, AS-3524A/A. Square flat antenna under the rear portion of the cabin."
+mtnpu,mtnpu.png,"Mount Tray NPU. Located in the Transition Avionics bay on a mid-level shelf."
+undercarriage-front,undercarriage-front.png,"Undercarriage of the aircraft looking aft from the nose."
+mt-arc-222,mt-arc-222.jpg,"ARC-222 VHF FM-AM Mount"
+ky100,ky-100.jpg,"KY-100. Located in the aft avionics compartment, toward the top left when looking to the rear."
+eoms-rear,eoms-rear.jpg,"Sensor, EOMS. Located at the rear end of the vertical stabilizer."
