@@ -7,8 +7,11 @@
 \usepackage{ragged2e}
 \usepackage{microtype}
 \usepackage[table]{xcolor}
-\usepackage[labelformat=empty]{caption}
+\usepackage{caption}
+\usepackage{tikz}
+
 % define the title
+
 \author{CW2 Peter Goodspeed-Niklaus}
 \title{HH-60 DA 2408-17 Photo Guide}
 \titlepic{\includegraphics[width=\textwidth]{Images/hh-60m.jpg}}
@@ -25,6 +28,7 @@
 \setcounter{page}{0}
 \maketitle
 \clearpage
+\captionsetup{labelformat=empty}
 \chapter*{About This Document}
 Indices are identical but for ordering. First index is ordered per the part number on a reference DA~2408-17. Second index is ordered alphabetically by nomenclature.
 
@@ -72,10 +76,13 @@ Document license: \href{https://creativecommons.org/}{Creative Commons} \href{ht
 \section{Section V: Tail Rotor Pylon}
 \input{section5b.tex}
 \clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Figures Chapter Begins Here %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\thefigure}{\arabic{figure}}
+\setcounter{figure}{0}
+\captionsetup{format=hang,labelformat=default,labelsep=endash}
 \chapter{Figures}
-\begin{figure}[htp]
-	\includegraphics[width=\textwidth]{Images/avionics-bay.jpg}
-	\caption{Avionics Bay} \label{avionics}
-\end{figure}
+\input{figures.tex}
 \end{document}
 

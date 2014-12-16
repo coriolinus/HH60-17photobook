@@ -5,8 +5,9 @@ Why aren't we writing .tex files directly? Because we want to include the same d
 differing only in sort order. In keeping with DRY, we write this once (in the CSV) and have this
 utility handle the re-sort. 
 """
-
+from collections import OrderedDict
 from glob import iglob as glob
+from pprint import pprint
 import csv
 
 def latexrow(lst):
@@ -49,25 +50,84 @@ def fixref(items):
 		if len(row) < 3 or len(row[2]) == 0:
 			c = "No Reference"
 		else:
-			c = r"\ref{" + row[3] + "}"
+			c = r"\ref{" + row[2] + "}"
 		if len(row) >= 4 and len(row[3]) > 0:
 			c += "-" + row[4]
 		ret.append([a, b, c])
 	return ret
+
+class OrderedSet(object):
+	"Super hacky way to preseve an ordering while eliminating duplicates"
+	def __init__(self, it=None):
+		self.set = set()
+		self.list = []
+		
+		if it is not None:
+			for i in it:
+				self.add(i)
+		
+	def add(self, o):
+		if o not in self.set:
+			self.list.append(o)
+			self.set.add(o)
+		
 	
-for section in glob('section*.csv'):
-	with open(section, 'r') as scsv:
-		scsvr = csv.reader(scsv)
-		header = next(scsvr)
-		items = [record for record in scsvr]
+if __name__ == '__main__':
+	references = OrderedSet()
+	for section in sorted(glob('section*.csv')):
+		with open(section, 'r') as scsv:
+			scsvr = csv.reader(scsv)
+			header = next(scsvr)
+			items = []
+			for record in scsvr:
+				items.append(record)
+				if len(record) >= 3 and len(record[2]) > 0:
+					references.add(record[2])
+		
+		print("Read " + section)
+		
+		items = fixref(items)
+		
+		outan = section[:-4] + 'a.tex' # filename for first outputs
+		emit(outan, header, items)
+		
+		outbn = section[:-4] + 'b.tex' # filename for second outputs
+		# the second field in the CSV is the nomenclature
+		emit(outbn, header, sorted(items, key=lambda record: record[1])) # sort records by nomenclature
 	
-	print("Read " + section)
+	# handle figures now
+	with open('figures.csv', 'r') as fin:
+		fcsvr = csv.reader(fin)
+		items = OrderedDict()
+		for record in fcsvr:
+			items[record[0]] = record
+		
+	figs = set(items.keys())
+	figs_without_refs = figs - references.set
+	if len(figs_without_refs) > 0:
+		for fwr in figs_without_refs:
+			print("WARN: No reference exists to figure " + fwr)
+	refs_without_figs = references.set - figs
+	if len(refs_without_figs) > 0:
+		# print(refs_without_figs)
+		for rwf in refs_without_figs:
+			print("WARN: No figure given for reference " + rwf)
 	
-	items = fixref(items)
+	fig_order = []
+	# now order the figures by first appearance in references
+	for ref in references.list:
+		if ref in items:
+			fig_order.append(items[ref])
+			del items[ref]
+	# complete the rest of the unreferenced items
+	fig_order.extend(items.values())
 	
-	outan = section[:-4] + 'a.tex' # filename for first outputs
-	emit(outan, header, items)
+	#pprint(fig_order)
 	
-	outbn = section[:-4] + 'b.tex' # filename for second outputs
-	# the second field in the CSV is the nomenclature
-	emit(outbn, header, sorted(items, key=lambda record: record[1])) # sort records by nomenclature
+	with open('figures.tex', 'w') as fout:
+		for ref, fn, caption in fig_order:
+			print(r"\begin{figure}[htp]", file=fout)
+			print(r"\includegraphics[width=\textwidth]{Images/" + fn + "}", file=fout)
+			print(r"\caption{" + caption + r"} \label{" + ref + "}", file=fout)
+			print(r"\end{figure}", file=fout)
+		
