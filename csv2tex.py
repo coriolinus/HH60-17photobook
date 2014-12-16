@@ -24,7 +24,7 @@ def emit(name, header, items):
 %\rowcolors{1}{white}{gray}
 \begin{longtable}{@{}
                   r 
-				  P{.7\textwidth} 
+				  P{.75\textwidth} 
 				  c
 				  @{}}""", file=of)
 		print(r"\hline", file=of)
@@ -52,7 +52,7 @@ def fixref(items):
 		else:
 			c = r"\ref{" + row[2] + "}"
 		if len(row) >= 4 and len(row[3]) > 0:
-			c += "-" + row[4]
+			c += "-" + row[3]
 		ret.append([a, b, c])
 	return ret
 
