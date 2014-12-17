@@ -1,57 +1,57 @@
 Item,Nomenclature,Figure
-1,"Dust \& Moisture Plug (APU Exhaust), 701700-20509-04",
+1,"Dust \& Moisture Plug (APU Exhaust), 701700-20509-04",apu-exhaust
 2,"Battery Storage (SLAB), D8565/11-1",
-3,"Amplifier Elec (Stabilator Amp), 70902-02001-048(AM-7106E)",
-4,"Blade Fold Kit, 70700-20412-011",
-5,"Blade Lock Assy, 70700-20369-041",
+3,"Amplifier Elec (Stabilator Amp), 70902-02001-048(AM-7106E)",stab-amps
+4,"Blade Fold Kit, 70700-20412-011",bladefold
+5,"Blade Lock Assy, 70700-20369-041",bladerope
 6,"Cargo Hook, 70800-2503-103, 70800-5803-113",
 7,"Ax Pick Head (Crash Axe), 56D6221",
-8,"Engine Cover (LH), 89SDSCC-D-0162-1",
-9,"Engine Cover (RH), 89SDSCC-D-0162-2",
-10,"Binder Loose Leaf (Equip Logbook), MIL-B-430641",
+8,"Engine Cover (LH), 89SDSCC-D-0162-1",engine-cover
+9,"Engine Cover (RH), 89SDSCC-D-0162-2",engine-cover
+10,"Binder Loose Leaf (Equip Logbook), MIL-B-430641",logbook
 11,"Grip Assy Control (Cargo Hk Pendant), PM22609",
-12,"Adaptor Straight, Flange to Hose (Fuel Drain), 70307-03018-102",
-13,Mount Installation Gun MH60 (LH) 70751-02200-011,
-14,"Firing Assy Gun M60D (LH), 70751-02023-043",
-15,Mount Installation Gun MH60 (RH) 70751-02200-012,
-16,"Firing Assy Gun M60D (RH), 70751-02023-044",
-17,"Handset, H-250A/U",
-18,"Hydraulic Pump Handle, 466536",
-19,"Grip Assy Controller (Firing Key), PM22609",
-20,"Harness Assy (10FT ICS Cord), 70602-02107-041",
-21,"Harness Assy Walk Around (ICS), 70602-02016-041",
-22,"Intercommunication Control, C-11746C(V)3/ARC",
-23,"Tiedown Assy, 70700-20433-045",
-24,"Cover Assy Oil Cooler, 70700-20511-041",
-25,"Pilot Cover Set, 70700-20460-041",
-26,"Portable Insp Light, 15-0366-1",
-27,"Antenna (Stormscope), 78-8051-9220-6",
-28,"VOR Marker Beacon Antena, AS-3525/A(FMB10-272E)",
-29,VHF AM/FM Antenna,
-30,Storm Scope Antenna,
-31,708-1026 Overhead Light Assy,
+12,"Adaptor Straight, Flange to Hose (Fuel Drain), 70307-03018-102",adaptor-straight
+13,Mount Installation Gun MH60 (LH) 70751-02200-011,no
+14,"Firing Assy Gun M60D (LH), 70751-02023-043",no
+15,Mount Installation Gun MH60 (RH) 70751-02200-012,no
+16,"Firing Assy Gun M60D (RH), 70751-02023-044",no
+17,"Handset, H-250A/U",no
+18,"Hydraulic Pump Handle, 466536",hyd-pump-handle
+19,"Grip Assy Controller (Firing Key), PM22609",firing-key
+20,"Harness Assy (10FT ICS Cord), 70602-02107-041",ics-cord
+21,"Harness Assy Walk Around (ICS), 70602-02016-041",ics-cord
+22,"Intercommunication Control, C-11746C(V)3/ARC",ics-control
+23,"Tiedown Assy, 70700-20433-045",tiedown-assy
+24,"Cover Assy Oil Cooler, 70700-20511-041",cover-oil-cooler
+25,"Pitot Cover Set, 70700-20460-041",pitot-cover
+26,"Portable Insp Light, 15-0366-1",port-insp-lt
+27,"Antenna (Stormscope), 78-8051-9220-6",stormscope-ant
+28,"VOR Marker Beacon Antena, AS-3525/A(FMB10-272E)",oh-lights
+29,VHF AM/FM Antenna,vhf-amfm
+30,Storm Scope Antenna,stormscope-ant
+31,708-1026 Overhead Light Assy,oh-lights
 32,LH Litter Lift Assy,
 33,RH Litter Lift Assy,
-34,LH Litter Lift \& Lighting Control Panel,
-35,RH Litter Lift \& Lighting Control Panel,
-36,Seat Ambulatory Patient Litter,
-37,Overhead Control Panel,
+34,LH Litter Lift \& Lighting Control Panel,lift-lt-ctrl
+35,RH Litter Lift \& Lighting Control Panel,lift-lt-ctrl
+36,Seat Ambulatory Patient Litter,seat-litter
+37,Overhead Control Panel,lift-lt-ctrl
 38,Medical Cabinet,
-39,Medical Attendant / Crew Seat,
-40,Ambulatory Patient Seats,
-41,Breeze-Eastern High Speed Hoist,
-42,Forward Looking Infrared System (FLIR),
-43,Environmental Control Unit,
-44,S7060-55801 Multi Function Display (MFD),
-45,S7060-55802 FLIR Control Panel (Hand Control),
+39,Medical Attendant / Crew Seat,crew-seat
+40,Ambulatory Patient Seats,seat-litter
+41,Breeze-Eastern High Speed Hoist,hoist
+42,Forward Looking Infrared System (FLIR),flir-turret
+43,Environmental Control Unit,ecs-ctrl
+44,S7060-55801 Multi Function Display (MFD),mfd
+45,S7060-55802 FLIR Control Panel (Hand Control),flir-ctrl
 46,9500100-60 FLIR CEU (Quad Bay),
-47,9500-1200-50 FLIR Turret,
-48,78-8060-4900-8 Storm Scope Display,
+47,9500-1200-50 FLIR Turret,flir-turret
+48,78-8060-4900-8 Storm Scope Display,stormscope-display
 49,P8565/11-1 SLAB Battery (Quad Bay),
-50,S7060-55834-101 Aux Switch Panel,
-51,S7060-55803 Emergency Control Panel,
+50,S7060-55834-101 Aux Switch Panel,aux-switch
+51,S7060-55803 Emergency Control Panel,emer-ctrl
 52,Hoist Control Panel,
-53,VHF AM/FM Control Panel,
+53,VHF AM/FM Control Panel,no
 54,Data Transfer Module,
-55,C11755-ARS-6(V) PLS Control Center Console,
+55,C11755-ARS-6(V) PLS Control Center Console,pls-ctrl
 56,NCS Magnus Tablet Computer Logbook,

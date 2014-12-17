@@ -125,9 +125,18 @@ if __name__ == '__main__':
 	#pprint(fig_order)
 	
 	with open('figures.tex', 'w') as fout:
+		
+		# LaTeX has trouble with lots of figures in a row, so let's give it a hand
+		figcount = 0
+		
 		for ref, fn, caption in fig_order:
 			print(r"\begin{figure}[htp]", file=fout)
 			print(r"\includegraphics[width=\textwidth]{Images/" + fn + "}", file=fout)
 			print(r"\caption{" + caption + r"} \label{" + ref + "}", file=fout)
 			print(r"\end{figure}", file=fout)
+			
+			figcount += 1
+			if figcount >= 15:
+				print (r"\clearpage", file=fout)
+				figcount = 0
 		
