@@ -1,4 +1,4 @@
-avionics,avionics-bay.jpg,Avionics Bay
+avionics,avionics-bay.png,Avionics Bay
 trpylon,tail-rotor-pylon.png,Tail Rotor Pylon
 vhf-coupler,vhf-ant-coupler.png,VHF-FM \#1 Coupler Ant
 t-c-ant,t-c-ant.png,VHF-FM Troop Commander Antenna
@@ -55,3 +55,31 @@ stormscope-display,stormscope-display.jpg,"Stormscope Display. Adjacent to IVHMS
 aux-switch,aux-switch.jpg,Aux. Switch Panel
 emer-ctrl,emer-ctrl.jpg,Emergency Control Panel
 pls-ctrl,pls-ctrl.jpg,Personnel Locator System Control Head
+lower-console,lower-console.png,Pilots' Lower Console
+apr39-ind,apr39-ind.jpg,APR-39 Indicator
+av-bay-int,avionics-bay-interior.png,Nose Avionics Bay Interior
+av-door-int,av-door-int.png,Nose Avionics Bay Door Interior
+ircm-cont,ircm-cont.jpg,IRCM / ALQ-144 Control. Control Infrared Countermeasure. Located on main dashboard.
+cmws-cont,cmws-cont.jpg,CMWS Control Head
+cdu,cdu.jpg,Control Display Unit (CDU)
+clock-digital,clock-digital.jpg,"Aircraft Clock, Digital"
+armor-wing-panel,armor-wing-panel.jpg,Armor Wing Panel. Adjacent to pilot's seat.
+cis-mode-sel,cis-mode-sel-pnl.jpg,"CIS / Mode Select Panel. Dashboard, right side."
+hh-pilot-seat,hh-pilot-seat.jpg,HH-60 Pilot Seat
+idm-mount,idm-modem-mount.jpg,IDM Modem Mount
+asn128,asn128.jpg,
+altimeter-enc,altimeter-enc.jpg,"Altimeter, Encoding. Right side of dashboard."
+altimeter-nenc,altimeter-nenc.jpg,"Altimeter, Barometric, Non-encoding. Left side of dashboard."
+firstaid,firstaid.png,"First Aid Kits. Cabin interior, looking forward."
+oat,oat.jpg,"Outside Air Temperature gauge. Greenhouse windows, towards center."
+hud-disp,hud-disp.jpg,HUD Display Unit
+hud-conv-ctrl,hud-conv-ctrl.jpg,HUD Converter Control Unit
+rad-alt-ant,rad-alt-ant.jpg,Radar Altimeter Antenna. Located left and right of centerline near the front of the underside of the aircraft.
+rad-alt-ind,rad-alt-ind.jpg,Radar Altimeter Indicator. Located to the top right of primary flight instruments panels.
+retrans,retrans.jpg,Radio Retransmission Control. Located to the rear of the lower console.
+afcs,afcs.jpg,"Computer Flight Director (AFCS) and Mounting Tray. From the cabin, look forward; low, between the pilots' seats. "
+stdby-compass,stdby-compass.jpg,Standby Compass. Located above the dashboard.
+boxen,misc-boxen.png,SINCGARS / ARC-201 components
+arc201-lpf,arc201-lpf.jpg,ARC-201 VHF FM Low Pass Filter
+quadbay,quadbay.jpg,Quad Bay Antenna / Quad Bay Access Panel. Centered under aircraft nose.
+ant-coupler,ant-coupler.jpg,VHF-FM \#2 Antenna Coupler
