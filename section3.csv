@@ -1,32 +1,55 @@
-Item,Nomenclature,Figure
-1,"Transmitter Countermeasures, T1360A(V)1/ALQ-144(V)(A3059420)",alq144
-2,"Processor (Stormscope), 78-8060-6092-3",stormscope-processor
-3,"Modem, Communications, DDM001-301(MD-1295/A)",modem-communications
-4,"Control Unit (APU), 450587",cabin-upper,2
-5,"Electronic Sequencing Unit (APU), 2118806-2(GTCP36-150BH)",esu-apu
-6,"VHF-FM Radio Freq AMO(IFM), AM-7189A/ARC (622-6545-003)",transition-floor,1
-7,"VHF-AM Rec/Trans, RT-1704/ARC-222(902047-802",rt1704
-8,"UHF-AM Rec/Trans, RT-1614/ARC-164(V)",rt1614
-9,"UHF-AM Mount Base Rec/Trans, MT-4838/ARC-164",mt4838
-10,"HF-AM AMP, AM-7531/URC(822-0787-001)",transition-floor,2
-11,"HF-AM Mount Base Amp, MT-7106/ARC222(V)(822-0787-001",transition-floor,3
-12,"HF-AM Mount Base Rec/Trans, MT-7108/ARC220(V)(200-3202-00)",transition-floor,4
-13,"HF-AM Rec/Trans, RT-1749/URC(822-0788-001",transition-floor,5
-14,"ADF Loop Ant, AS-3933/ARN-149(V)1(622-6820-001), AS-4480/ARN-149(V)1(622-6820-001",adf-loop-ant
-15,"Compass Compensator, CN-405/ASN",tcir,1
-16,"Compass Flux Valve, T-611/ASN",tcir,1
-17,"Fuel Pump Sampler, 4P156-3",fuel-sampler
-18,"GPS Antenna, 22433-40",top-rear,1
-19,"IFF Antenna, AS-3528/A",top-rear,2
-20,"UHF-AM Antenna, AS-3524A/A(70600-03002-104",uhf-am-ant
-21,"Mount Tray NPU, ROLM105749",mtnpu
-22,"Blade Antenna, AS-2890/APR-39(V)",undercarriage-front,1
-23,Storm Scope Processor Mount,stormscope-processor
-24,ARC-222 VHF FM-AM Mount,mt-arc-222
-25,ARC-220 HF RT-1749/URC,transition-floor,5
-26,ARC-220 HF RT-1749/URC Mount,transition-floor,4
-27,KY 100 Mount,ky100
-28,KY 100 Battery Box,transition-floor,6
-29,IDM Modem Mount,
-30,"Sensor, EOMS (LWR Transition) SU-202/AAR-57(V)",eoms-rear
-31,"Sensor, EOMS (LWR Transition) SU-202/AAR-57(V)",eoms-rear
+Item,Item,Nomenclature,Figure
+1,,"Transmitter Countermeasures, T1360A(V)1/ALQ-144(V)(A3059420)",alq144,
+2,19,"Processor (Stormscope), 78-8060-6092-3",stormscope-processor,
+2,19,"78-8060-6092-3, Stormscope Processor",stormscope-processor,
+3,,"Modem, Communications, DDM001-301(MD-1295/A)",modem-communications,
+4,,"Control Unit (APU), 450587",cabin-upper,2
+5,,"Electronic Sequencing Unit (APU), 2118806-2(GTCP36-150BH)",esu-apu,
+6,,"VHF-FM Radio Freq AMO(IFM), AM-7189A/ARC (622-6545-003)",transition-floor,1
+7,,"VHF-AM Rec/Trans, RT-1704/ARC-222(902047-802",rt1704,
+8,15,"UHF-AM Rec/Trans, RT-1614/ARC-164(V)",rt1614,
+9,16,"UHF-AM Mount Base Rec/Trans, MT-4838/ARC-164",mt4838,
+8,15,"707698-802, UHF-AM ARC-164 R/T",rt1614,
+9,16,"MT-4838/ARC-164, ARC-164 UHF RT1614/ARC-164 Mount",mt4838,
+10,8,"HF-AM AMP, AM-7531/URC(822-0787-001)",transition-floor,2
+10,8,"AM-7531/URC, HF Amplifier",transition-floor,2
+11,,"HF-AM Mount Base Amp, MT-7106/ARC222(V)(822-0787-001",transition-floor,3
+12,14,"HF-AM Mount Base Rec/Trans, MT-7108/ARC220(V)(200-3202-00)",transition-floor,4
+12,14,"MT-7108, ARC-220 HF Rcvr Mount",transition-floor,4
+13,9,"HF-AM Rec/Trans, RT-1749/URC(822-0788-001",transition-floor,5
+13,9,"RT-1849/URC, Rcvr/Trans HF",transition-floor,5
+14,1,"ADF Loop Ant, AS-3933/ARN-149(V)1(622-6820-001), AS-4480/ARN-149(V)1(622-6820-001",adf-loop-ant,
+14,1,"AS-3933/ARN-149, ADF Antenna",adf-loop-ant,
+15,5,"Compass Compensator, CN-405/ASN",tcir,1
+15,5,"CN-405/ASN, Compass Compensator Flux",tcir,1
+16,6,"Compass Flux Valve, T-611/ASN",tcir,1
+16,6,"T-611A/ASN-43, Compass Transmitter",tcir,1
+17,4,"Fuel Pump Sampler, 4P156-3",fuel-sampler,
+17,4,"82829/4P156-3, Pump Fuel Sampler",fuel-sampler,
+18,7,"GPS Antenna, 22433-40",top-rear,1
+18,7,"22433-40, GPS Antenna",top-rear,1
+19,2,"IFF Antenna, AS-3528/A",top-rear,2
+19,2,"70600-02010-103, IFF Antenna",top-rear,2
+20,3,"UHF-AM Antenna, AS-3524A/A(70600-03002-104",uhf-am-ant,
+20,3,"70600-03002-104, UHF/AM Antenna",uhf-am-ant,
+21,,"Mount Tray NPU, ROLM105749",mtnpu,
+22,,"Blade Antenna, AS-2890/APR-39(V)",undercarriage-front,1
+23,,Storm Scope Processor Mount,stormscope-processor,
+24,18,ARC-222 VHF FM-AM Mount,mt-arc-222,
+24,18,"DMYNO-NOTASA002, ARC-222 VHF FM/AM Mount",mt-arc-222,
+25,,ARC-220 HF RT-1749/URC,transition-floor,5
+26,,ARC-220 HF RT-1749/URC Mount,transition-floor,4
+27,,KY 100 Mount,ky100,
+28,21,KY 100 Battery Box,transition-floor,6
+28,21,"CY8515/ARC-201, KY-100 Battery Box",transition-floor,6
+29,22,IDM Modem Mount,,
+29,22,"DM-SM-0301-5, Elect IDM Mounting Base",,
+30,,"Sensor, EOMS (LWR Transition) SU-202/AAR-57(V)",eoms-rear,
+31,,"Sensor, EOMS (LWR Transition) SU-202/AAR-57(V)",eoms-rear,
+,10,"70309-03800-101, Oxygen Concentrator Molecular Sieve",,
+,11,RT-1625/ARN-153 Tacan Rcvr/Transm,,
+,12,"MT-6711/ARN-153, Tacan RT-1625 ARN-153 Mount",,
+,13,"70309-03800-104, OBOGS Quantity Panel",,
+,17,"RT-1532/ARS-6, PLS Rcvr Trans Switching Unit",,
+,20,"MT-6811/AMS-2, Stormscope Processor Mount",stormscope-processor,
+,23,"AS-3984/ARC, PLS Antenna",,

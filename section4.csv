@@ -1,8 +1,13 @@
-Item,Nomenclature,Figure
-1,"VOR/ILS Antenna, AS-3526/A(VT11-333A)",profile-ants,3
-2,"HF Antenna, 70600-85320-141",profile-ants,1\&2
-3,"HF Antenna Element Aft, 4200626-30",profile-ants,2
-4,"HF Antenna Element Fwd, 4200626-30",profile-ants,1
-5,"Electronics Module Assy(M130), 9311431",m130,2
-6,"Dispenser Assy, 9311434",m130,3
-7,"Payload Module Assy (M130), 9311451",m130,4
+Item,Item,Nomenclature,Figure
+1,1,"VOR/ILS Antenna, AS-3526/A(VT11-333A)",profile-ants,3
+1,1,"70600-05002-101, VOR/LOC Antenna",profile-ants,3
+2,4,"HF Antenna, 70600-85320-141",profile-ants,1\&2
+2,4,"S7060-13014-011, HF Antenna Instl",profile-ants,1\&2
+3,,"HF Antenna Element Aft, 4200626-30",profile-ants,2
+4,,"HF Antenna Element Fwd, 4200626-30",profile-ants,1
+5,,"Electronics Module Assy(M130), 9311431",m130,2
+6,,"Dispenser Assy, 9311434",m130,3
+7,,"Payload Module Assy (M130), 9311451",m130,4
+,2,"AM-7189A/ARC, IFM Amplifier",,
+,3,"MT-6592/ARC, IFM Amplifier Mnt",,
+,5,"MWR-A04621-011, LWF Tacan Antenna Instl",,

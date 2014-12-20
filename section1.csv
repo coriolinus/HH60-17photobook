@@ -1,67 +1,121 @@
-Item,Nomenclature,Figure
-1,"Radar Det Set Control, C-11308/APR-39A(V)",lower-console,1
-2,"Radar Signal Ind, IP-1150A/APR-39(V)",apr39-ind,
-3,"Digital Processoe, CP-1597A/APR-39A(V)",av-bay-int,1
-4,"Radar Receiver, R2218/APR-39(V)",av-door-int,1
-5,"Antenna Detector, AS-3549A/APR-39(V)",av-door-int,2
-6,"Antenna Detector, AS-3549A/APR-39(V)",av-door-int,2
-7,"Control Infrared Countermeasure, SM-D-951470(C-10280/ALQ-144(V)",ircm-cont,
-8,"Dispenser Cont Panel Assy, 9272553",cmws-cont,
-9,"Indicator Meteorological(Stormscope), 78-8060-5900-8",stormscope-display,
-10,"Emergency Cont Panel, 100-602389-000",emer-ctrl,
-11,"Control Display Unit, S7060-55800-102, 100-602296-000",cdu,
-12,"ADF Receiver, R2382/ARN149(V)1(C622-6812-002",avionics,1
-13,"ADF Rec Mount Base, MT-6583/ARN-149(V)1",avionics,1
-14,"ACFT Clock (Digital), PDMME367-3, DMN-100-150",clock-digital,
-15,"Armor Wing Panel (LH), 70500-01152-093",armor-wing-panel,
-16,"Armor Wing Panel (RH), 70500-01152-094",armor-wing-panel,
-17,"CIS Mode Sel Control Panel, C-10999A/A",cis-mode-sel,
-18,"CIS Command Processor, CP-2036/A",avionics,2
-19,"CIS Mount Base, MT-6226A/A",avionics,2
-20,"Compass Control, CN-988/ASN-43",,
-21,"Compass Gyro, CN-988B/ASN-43(SM-D-498762",,
-22,"Mount Base (KIT-1C), MT-3949A/U",avionics,3
-23,"KY-100 Air Term, ON616736-1(TSEC/KY-100)",ky100,
-24,"Control Ind (KY-58), C-8157/ARC (SMD535629) (Z-AHP)",lower-console,2
-25,"T/SSEC-KY-58, ON241800-1",avionics,4
-26,"T/SEC-KY-58 Mount Assy, 5290279-502",avionics,4
-27,"Crew Seat Pilot/Co-Pilot, RA30525-101, D3801-1, D3801-2, 100900-5",hh-pilot-seat,
-28,"Doppler Control, CP-1252D/ASN-128C",avionics,5
-29,IDM Modem Mount,idm-mount,
-30,"Doppler REC/TRANS, RT-1193A/ASN-128",asn128,
-31,A3301520/ALQ-144(V) – IR Jammer Countermeasure,alq144,
-32,"Data Transfer Receptical, MU-1005/A(622-9309-001)",lower-console,3
-33,"Encoder Altimeter (Barometric), AAU-32/A, AAU-32/A-1",altimeter-enc,
-34,"Altimeter Pressure, AAU-21A, AAU-31/A-1",altimeter-nenc,
-35,"Fire Extinguisher, 10916537, BBE2897-1-A, MIL-E-52031D",,
-36,"First Aid Kit, IRR-A-6882",firstaid,1
-37,"Thermometer Self Ind (OAT), MS28028-01",oat,
-38,"HUD Control, C-12293/AVS-7(125150-001)",avionics,6
-39,"HUD Converter, CG-4229(V)8/AVS (125110-007)",hud-conv-ctrl,
-40,"HUD Display Unit, SU-180/AVS-7",hud-disp,
-41,"HUD Elec Control Amp, 00-05003-001",,
-42,"Support Assy Mount, 08-26110-1",,
-43,"Intercommunication Control, C-11746C(V)3/ARC",ics-control,
-44,"Misc Switch Panel, 70450-0109-041, 70450-0109-044, 70450-0109-049",lower-console,4
-45,"Pitch Rate Gyro Assy, 70600-01213-041",,
-46,"Radar Altimeter Ant, AS-3831/APM-209",rad-alt-ant,
-47,"Radar Alt. Height Ind, ID-1917C/APN-209(V)",rad-alt-ind,
-48,"Radar Alt Rec/Trans, RT-1115J/APN-209(V)",rad-alt-ind,
-49,"Radio Retransmission Control, C-11038A/A",retrans,
-50,"Displacement Gyro, CN-1314/A, CN-1314A/A, CN-1314B/A, CN-1314E/A",avionics,7
-51,"SAS Amplifier, AM-7105A/A",av-bay-int,2
-52,"Flight Control Panel, C-10909D/A",lower-console,5
-53,"Stabilization Data Ind, ID-2279A/A(70450-01053-107)",,
-54,"Stabilator Sys Test Panel, 70450-01107-043)",,
-55,"Computer Flight Director (AFCS), CP-1446/A, CP-1446A/A",afcs,
-56,"Tray Vibration (AFCS/AFCC Mount), 769730-1",afcs,
-57,"Standby Compass, MS17983-4",stdby-compass,
-58,"Transponder Rec/Trans, AN/APX-118(V)",lower-console,6
-59,"UHF/AM Rec/Trans, RT-1614/ARC-164(V)",no,
-60,"VHF-AM Control, C-12319/ARC-222(902048-802)",no,
-61,"Battery Box, CY-8515/ARC-201(V)(B4041380-1",boxen,1
-62,"VHF-FM Rec/Trans, RT-1478D©/ARC-201D(V)A3259311-1)",boxen,2
-63,"VHF-FM Mount Base, MT-7101/ARC-201D(V)9A3210619)",boxen,2
-64,"VHF-FM Low Pass Filter, LPF040-02B, 70600-01011-103(LPF40-29)",arc201-lpf,
-65,VHF-FM\#2/ADF/VHF-AM ANT(Quad ANT) FVL10-265 (70600-01019-104),quadbay,
-66,"VHF-FM\#2 Ant Coupler, CU-2450/ARC-186 (FM20-74)",ant-coupler,
+Item,Item,Nomenclature,Figure
+1,,"Radar Det Set Control, C-11308/APR-39A(V)",lower-console,1
+2,,"Radar Signal Ind, IP-1150A/APR-39(V)",apr39-ind,
+3,,"Digital Processoe, CP-1597A/APR-39A(V)",av-bay-int,1
+4,,"Radar Receiver, R2218/APR-39(V)",av-door-int,1
+5,,"Antenna Detector, AS-3549A/APR-39(V)",av-door-int,2
+6,,"Antenna Detector, AS-3549A/APR-39(V)",av-door-int,2
+7,,"Control Infrared Countermeasure, SM-D-951470(C-10280/ALQ-144(V)",ircm-cont,
+8,,"Dispenser Cont Panel Assy, 9272553",cmws-cont,
+9,47,"Indicator Meteorological(Stormscope), 78-8060-5900-8",stormscope-display,
+9,47,"78-8060-5900-8, Stormscope Display",stormscope-display,
+10,49,"Emergency Cont Panel, 100-602389-000",emer-ctrl,
+10,49,"S7060-55801-101, Emergency Control Panel",emer-ctrl,
+11,46,"Control Display Unit, S7060-55800-102, 100-602296-000",cdu,
+11,46,"S7060-55800-102, Control Display Unit Ctr Console",cdu,
+12,28,"ADF Receiver, R2382/ARN149(V)1(C622-6812-002",avionics,1
+12,28,"R-2382/ARN-149, ADF Radio Rcvr",avionics,1
+13,,"ADF Rec Mount Base, MT-6583/ARN-149(V)1",avionics,1
+14,39,"ACFT Clock (Digital), PDMME367-3, DMN-100-150",clock-digital,
+14,39,"DNM-10-150, Aircraft Clock",clock-digital,
+15,25,"Armor Wing Panel (LH), 70500-01152-093",armor-wing-panel,
+16,26,"Armor Wing Panel (RH), 70500-01152-094",armor-wing-panel,
+15,25,"70500-01152-093, Armour Wing Panel",armor-wing-panel,
+16,26,"70500-01152-094, Armour Wing Panel",armor-wing-panel,
+17,,"CIS Mode Sel Control Panel, C-10999A/A",cis-mode-sel,
+18,31,"CIS Command Processor, CP-2036/A",avionics,2
+18,31,"CP-2036/A, Command Instr Processor",avionics,2
+19,32,"CIS Mount Base, MT-6226A/A",avionics,2
+19,32,"70600-01038-104, CIS Mount",avionics,2
+20,2,"Compass Control, CN-988/ASN-43",,
+20,2,"CN-998/ASN-43, Gyro Directional",,
+21,,"Compass Gyro, CN-988B/ASN-43(SM-D-498762",,
+22,4,"Mount Base (KIT-1C), MT-3949A/U",avionics,3
+22,4,"MT-3949A/U, MNT FOR KIT-1C",avionics,3
+23,,"KY-100 Air Term, ON616736-1(TSEC/KY-100)",ky100,
+24,,"Control Ind (KY-58), C-8157/ARC (SMD535629) (Z-AHP)",lower-console,2
+25,,"T/SSEC-KY-58, ON241800-1",avionics,4
+26,33,"T/SEC-KY-58 Mount Assy, 5290279-502",avionics,4
+26,33,"S7067-13013-042, TSEC/KY-58 Mount",avionics,4
+27,15,"Crew Seat Pilot/Co-Pilot, RA30525-101, D3801-1, D3801-2, 100900-5",hh-pilot-seat,
+27,15,"D3801-2, Crew seat",hh-pilot-seat,
+28,3,"Doppler Control, CP-1252D/ASN-128C",avionics,5
+28,3,"CV-3338A/ASN-128, Signal Data Conv",avionics,5
+29,,IDM Modem Mount,idm-mount,
+30,9,"Doppler REC/TRANS, RT-1193A/ASN-128",asn128,
+30,9,"RT-1193/ASN-128, Receiver Radar",asn128,
+30,18,"RT-1193/ASN-128, Receiver Radar",asn128,
+31,,A3301520/ALQ-144(V) - IR Jammer Countermeasure,alq144,
+32,51,"Data Transfer Receptical, MU-1005/A(622-9309-001)",lower-console,3
+32,51,"822-1157-001, Data Transfer Module Receptacle",lower-console,3
+33,14,"Encoder Altimeter (Barometric), AAU-32/A, AAU-32/A-1",altimeter-enc,
+33,14,"AAU-32A, Barometric Altimeter",altimeter-enc,
+34,13,"Altimeter Pressure, AAU-21A, AAU-31/A-1",altimeter-nenc,
+34,13,"AAU-31/A-1, Barometric Alt",altimeter-nenc,
+35,38,"Fire Extinguisher, 10916537, BBE2897-1-A, MIL-E-52031D",,
+35,38,"FR23-4-11848, Fire Extinguisher",,
+36,12,"First Aid Kit, IRR-A-6882",firstaid,1
+36,12,"6545-00-919-6650, First Aid Kit",firstaid,1
+37,24,"Thermometer Self Ind (FAT), MS28028-01",oat,
+37,24,"MS28028-1, Outside Air Temp Indic (FAT Gauge)",oat,
+38,42,"HUD Control, C-12293/AVS-7(125150-001)",avionics,6
+38,42,"C-12293/AVS-7, Converter Control Panel (HUD)",avionics,6
+39,34,"HUD Converter, CG-4229(V)8/AVS (125110-007)",hud-conv-ctrl,
+39,34,"CV-4229/AVS-7, Signal Data Converter",hud-conv-ctrl,
+40,43,"HUD Display Unit, SU-180/AVS-7",hud-disp,
+40,43,"SU-180/AVS-7, Display Unit (HUD)",hud-disp,
+41,35,"HUD Elec Control Amp, 00-05003-001",,
+41,35,"00-05003-001, AVS-7 Thermocouple Amplifier",,
+42,,"Support Assy Mount, 08-26110-1",,
+43,41,"Intercommunication Control, C-11746C(V)3/ARC",ics-control,
+43,41,"C-11746C/ARC, Control Comm System ICS",ics-control,
+44,40,"Misc Switch Panel, 70450-0109-041, 70450-0109-044, 70450-0109-049",lower-console,4
+44,40,"70450-01090-049, Misc Switch Panel",lower-console,4
+45,6,"Pitch Rate Gyro Assy, 70600-01213-041",,
+45,6,"70600-01047-041, Rate Gyro Assy",,
+,7,"TRU-2A/A, Rate Gyro",,
+46,10,"Radar Altimeter Ant, AS-3831/APM-209",rad-alt-ant,
+46,10,"AS-3831/APN-209, Antenna (Radar Alt Ant)",rad-alt-ant,
+47,19,"Radar Alt. Height Ind, ID-1917C/APN-209(V)",rad-alt-ind,
+48,17,"Radar Alt Rec/Trans, RT-1115J/APN-209(V)",rad-alt-ind,
+47,19,"ID-1917C/APN-209, Indicator Alt (Pilot's Radar Alt)",rad-alt-ind,
+48,17,"RT-1115D/APN-209, Rcvr/Transm (Co\-pilot's Radar Alt)",rad-alt-ind,
+49,,"Radio Retransmission Control, C-11038A/A",retrans,
+50,1,"Displacement Gyro, CN-1314/A, CN-1314A/A, CN-1314B/A, CN-1314E/A",avionics,7
+51,5,"SAS Amplifier, AM-7105A/A",av-bay-int,2
+51,5,"70901-02908-104, SAS Amplifier",av-bay-int,2
+52,,"Flight Control Panel, C-10909D/A",lower-console,5
+53,,"Stabilization Data Ind, ID-2279A/A(70450-01053-107)",,
+54,27,"Stabilator Sys Test Panel, 70450-01107-043)",,
+54,27,"70902-01070-048, Stab/Flt Control Panel",,
+55,,"Computer Flight Director (AFCS), CP-1446/A, CP-1446A/A",afcs,
+56,,"Tray Vibration (AFCS/AFCC Mount), 769730-1",afcs,
+57,23,"Standby Compass, MS17983-4",stdby-compass,
+57,23,"MS17983-4, Magnetic Compass",stdby-compass,
+58,20,"Transponder Rec/Trans, AN/APX-118(V)",lower-console,6
+58,20,"RT-1296A/APX-100, Recvr/Transm",lower-console,6
+59,,"UHF/AM Rec/Trans, RT-1614/ARC-164(V)",no,
+60,50,"VHF-AM Control, C-12319/ARC-222(902048-802)",no,
+60,50,"902048-802, VHF AM/FM Control Panel ARC-222",no,
+61,37,"Battery Box, CY-8515/ARC-201(V)(B4041380-1",boxen,1
+61,37,"CY-8515/ARC-201, Battery Box",boxen,1
+62,16,"VHF-FM Rec/Trans, RT-1478D(C)/ARC-201D(V)A3259311-1)",boxen,2
+62,16,"RT-1477/ARC-201, Recvr/Transm (FM RT)",boxen,2
+63,36,"VHF-FM Mount Base, MT-7101/ARC-201D(V)9A3210619)",boxen,2
+63,36,"MT-7101/ARC-201D, SINCGARS Rcvr Mount",boxen,2
+64,8,"VHF-FM Low Pass Filter, LPF040-02B, 70600-01011-103(LPF40-29)",arc201-lpf,
+64,8,"70600-01011-103, VHF/AM Antenna Filter",arc201-lpf,
+65,,VHF-FM\#2/ADF/VHF-AM ANT(Quad ANT) FVL10-265 (70600-01019-104),quadbay,
+66,,"VHF-FM\#2 Ant Coupler, CU-2450/ARC-186 (FM20-74)",ant-coupler,
+,11,"70600-01043-101, Glide Slope Antenna",,
+,21,"CP-1252C/ASN-128, Computer Display Unit",,
+,22,"C-8021E/ASN-75, Compass Set Controller",,
+,29,"622-6376-010, VOR/ILS Rcvr Radio",,
+,30,"MT-6313/ARN, VOR/ILS Rcvr Radio Mount",,
+,44,"3203134-4, FLIR CEU",flir-ctrl,
+,53,"S7060-55802-205, FLIR Turret",flir-turret,
+,54,"S7060-66802-106, Flir Track Handle",flir-ctrl,
+,45,"EC10021-4, Rescue Hoist Control Panel",,
+,48,"S7060-55804-101, Aux Switch Panel",,
+,52,"C-11755/ARS-6, PLS Control Head Display Unit",,
+,55,"SDP3B1-120-201-80, Programmable Cartridge",,

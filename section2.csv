@@ -1,57 +1,105 @@
-Item,Nomenclature,Figure
-1,"Dust \& Moisture Plug (APU Exhaust), 701700-20509-04",apu-exhaust
-2,"Battery Storage (SLAB), D8565/11-1",
-3,"Amplifier Elec (Stabilator Amp), 70902-02001-048(AM-7106E)",stab-amps
-4,"Blade Fold Kit, 70700-20412-011",bladefold
-5,"Blade Lock Assy, 70700-20369-041",bladerope
-6,"Cargo Hook, 70800-2503-103, 70800-5803-113",
-7,"Ax Pick Head (Crash Axe), 56D6221",
-8,"Engine Cover (LH), 89SDSCC-D-0162-1",engine-cover
-9,"Engine Cover (RH), 89SDSCC-D-0162-2",engine-cover
-10,"Binder Loose Leaf (Equip Logbook), MIL-B-430641",logbook
-11,"Grip Assy Control (Cargo Hk Pendant), PM22609",
-12,"Adaptor Straight, Flange to Hose (Fuel Drain), 70307-03018-102",adaptor-straight
-13,Mount Installation Gun MH60 (LH) 70751-02200-011,no
-14,"Firing Assy Gun M60D (LH), 70751-02023-043",no
-15,Mount Installation Gun MH60 (RH) 70751-02200-012,no
-16,"Firing Assy Gun M60D (RH), 70751-02023-044",no
-17,"Handset, H-250A/U",no
-18,"Hydraulic Pump Handle, 466536",hyd-pump-handle
-19,"Grip Assy Controller (Firing Key), PM22609",firing-key
-20,"Harness Assy (10FT ICS Cord), 70602-02107-041",ics-cord
-21,"Harness Assy Walk Around (ICS), 70602-02016-041",ics-cord
-22,"Intercommunication Control, C-11746C(V)3/ARC",ics-control
-23,"Tiedown Assy, 70700-20433-045",tiedown-assy
-24,"Cover Assy Oil Cooler, 70700-20511-041",cover-oil-cooler
-25,"Pitot Cover Set, 70700-20460-041",pitot-cover
-26,"Portable Insp Light, 15-0366-1",port-insp-lt
-27,"Antenna (Stormscope), 78-8051-9220-6",stormscope-ant
-28,"VOR Marker Beacon Antena, AS-3525/A(FMB10-272E)",oh-lights
-29,VHF AM/FM Antenna,vhf-amfm
-30,Storm Scope Antenna,stormscope-ant
-31,708-1026 Overhead Light Assy,oh-lights
-32,LH Litter Lift Assy,
-33,RH Litter Lift Assy,
-34,LH Litter Lift \& Lighting Control Panel,lift-lt-ctrl
-35,RH Litter Lift \& Lighting Control Panel,lift-lt-ctrl
-36,Seat Ambulatory Patient Litter,seat-litter
-37,Overhead Control Panel,lift-lt-ctrl
-38,Medical Cabinet,
-39,Medical Attendant / Crew Seat,crew-seat
-40,Ambulatory Patient Seats,seat-litter
-41,Breeze-Eastern High Speed Hoist,hoist
-42,Forward Looking Infrared System (FLIR),flir-turret
-43,Environmental Control Unit,ecs-ctrl
-44,S7060-55801 Multi Function Display (MFD),mfd
-45,S7060-55802 FLIR Control Panel (Hand Control),flir-ctrl
-46,9500100-60 FLIR CEU (Quad Bay),
-47,9500-1200-50 FLIR Turret,flir-turret
-48,78-8060-4900-8 Storm Scope Display,stormscope-display
-49,P8565/11-1 SLAB Battery (Quad Bay),
-50,S7060-55834-101 Aux Switch Panel,aux-switch
-51,S7060-55803 Emergency Control Panel,emer-ctrl
-52,Hoist Control Panel,
-53,VHF AM/FM Control Panel,no
-54,Data Transfer Module,
-55,C11755-ARS-6(V) PLS Control Center Console,pls-ctrl
-56,NCS Magnus Tablet Computer Logbook,
+Item,Item,Nomenclature,Figure
+1,15,"Dust \& Moisture Plug (APU Exhaust), 701700-20509-04",apu-exhaust
+1,15,"70700-20509-041, Plug Assy APU Exh",apu-exhaust
+2,9,"Battery Storage (SLAB), D8565/11-1",
+2,9,"D8565/11-1, SLAB Battery",
+3,,"Amplifier Elec (Stabilator Amp), 70902-02001-048(AM-7106E)",stab-amps
+4,17,"Blade Fold Kit, 70700-20412-011",bladefold
+4,17,"70700-20412-011, Blade Fold Set",bladefold
+5,11,"Blade Lock Assy, 70700-20369-041",bladerope
+5,11,"70700-20369-041, Lock Assy Blade Tiedown",bladerope
+6,,"Cargo Hook, 70800-2503-103, 70800-5803-113",
+7,7,"Ax Pick Head (Crash Axe), 56D6221",
+7,7,"56D6221, Crash Axe",
+8,17,"Engine Cover (LH), 89SDSCC-D-0162-1",engine-cover
+9,17,"Engine Cover (RH), 89SDSCC-D-0162-2",engine-cover
+,17,"89SDSCC-D-0162-1/-2, L/H \& R/H Engine Canvas Cover",engine-cover
+10,24,"Binder Loose Leaf (Equip Logbook), MIL-B-430641",logbook
+10,24,"Mil-B-43064, Equipment Logbook",logbook
+11,,"Grip Assy Control (Cargo Hk Pendant), PM22609",
+12,10,"Adaptor Straight, Flange to Hose (Fuel Drain), 70307-03018-102",adaptor-straight
+12,10,"70307-03018-102, Adapter Fuel Drain",adaptor-straight
+13,,Mount Installation Gun MH60 (LH) 70751-02200-011,no
+14,,"Firing Assy Gun M60D (LH), 70751-02023-043",no
+15,,Mount Installation Gun MH60 (RH) 70751-02200-012,no
+16,,"Firing Assy Gun M60D (RH), 70751-02023-044",no
+17,8,"Handset, H-250A/U",no
+17,8,"H-250/U, Hand Set",no
+18,22,"Hydraulic Pump Handle, 466536",hyd-pump-handle
+18,22,"15400-50126, Hyd Pump Handle",hyd-pump-handle
+19,23,"Grip Assy Controller (Firing Key), PM22609",firing-key
+19,23,"70500-03101-101, Firing Key",firing-key
+20,19,"Harness Assy (10FT ICS Cord), 70602-02107-041",ics-cord
+21,18,"Harness Assy Walk Around (ICS), 70602-02016-041",ics-cord
+20,19,"Harness Assy (10FT ICS Cord), 70602-02107-041",ics-cord
+21,18,"70600-85828-106, Walk Around ICS Cord (50 ft)",ics-cord
+22,16,"70600-85828-105, Walk Around ICS Cord (10 ft)",ics-control
+22,16,"C-11746C/ARC, Control Communication System ICS",ics-control
+23,14,"Tiedown Assy, 70700-20433-045",tiedown-assy
+23,14,"70700-20433-045, Tow Tiedown Assy",tiedown-assy
+24,16,"Cover Assy Oil Cooler, 70700-20511-041",cover-oil-cooler
+24,16,"70700-20511-041, Cover Assy Oil Cooler",cover-oil-cooler
+25,18,"Pitot Cover Set, 70700-20460-041",pitot-cover
+25,18,"70700-20460-041, Cover Pitot Tube",pitot-cover
+26,21,"Portable Insp Light, 15-0366-1",port-insp-lt
+26,21,"15-0366-1, Portable Insp Flood Light",port-insp-lt
+27,15,"Antenna (Stormscope), 78-8051-9220-6",stormscope-ant
+27,15,"78-0851-9220-6, Stormscope Antenna",stormscope-ant
+28,2,"VOR Marker Beacon Antena, AS-3525/A(FMB10-272E)",
+28,2,"70600-02011-103, Marker Beacon Ant Assy",
+29,24,VHF AM/FM Antenna,vhf-amfm
+29,24,"AS-4258/ARC, VHF AM/FM Antenna Element",vhf-amfm
+30,,Storm Scope Antenna,stormscope-ant
+31,,708-1026 Overhead Light Assy,oh-lights
+32,,LH Litter Lift Assy,
+33,,RH Litter Lift Assy,
+34,,LH Litter Lift \& Lighting Control Panel,lift-lt-ctrl
+35,,RH Litter Lift \& Lighting Control Panel,lift-lt-ctrl
+36,25,Seat Ambulatory Patient Litter,seat-litter
+36,25,"108400-1, Ambulatory Seat",seat-litter
+37,,Overhead Control Panel,lift-lt-ctrl
+38,,Medical Cabinet,
+39,23,Medical Attendant / Crew Seat,crew-seat
+39,23,"S7020-02802-101, Medical Attendant Seat",crew-seat
+40,,Ambulatory Patient Seats,seat-litter
+41,21,Breeze-Eastern High Speed Hoist,hoist
+41,21,"BL-299-30, External Hoist",hoist
+42,,Forward Looking Infrared System (FLIR),flir-turret
+43,20,Environmental Control Unit,ecs-ctrl
+43,20,"70450-21801-102, ECS Control Panel",ecs-ctrl
+44,,S7060-55801 Multi Function Display (MFD),mfd
+45,,S7060-55802 FLIR Control Panel (Hand Control),flir-ctrl
+46,,9500100-60 FLIR CEU (Quad Bay),
+47,,9500-1200-50 FLIR Turret,flir-turret
+48,,78-8060-4900-8 Storm Scope Display,stormscope-display
+49,,P8565/11-1 SLAB Battery (Quad Bay),
+50,,S7060-55834-101 Aux Switch Panel,aux-switch
+51,,S7060-55803 Emergency Control Panel,emer-ctrl
+52,,Hoist Control Panel,
+53,,VHF AM/FM Control Panel,no
+54,,Data Transfer Module,
+55,,C11755-ARS-6(V) PLS Control Center Console,pls-ctrl
+56,,NCS Magnus Tablet Computer Logbook,
+,1,"70800-02503-113, Cargo Hook FE-7590-145",
+,3,"70600-02017-104, FM Homing Ant Assy",
+,4,"70600-02017-105, FM Homing Ant Assy",
+,5,"6545-00-919-6650, First Aid Kit",firstaid
+,6,"FR23-4-11848, Fire Ext",
+,12,"70700-20515-041/042, Plug Assy Int-HIRSS Support",
+,13,"83DSCC-D006, Engine Inlet Cover",
+,14,"70700-2515-043, Plug Assy Exh-HIRSS",
+,19,"70500-05151-045, Troop Seats",no
+,20,"70500-02153-103, Restraint System",no
+,13,"TM 55\-1500\-342\-23, Weight and Balance Handbook",logbook
+,22,"CP-1100-2, Pendant Control Assy Hoist",
+,26,"8-01-115701, Restraint L/H Side",
+,27,"8-01-110701, Restraint Buckle",
+,28,"70500-02160-102, Troop Seat Hanger Ring",
+,29,"609935-0016, Carabiner",
+,30,"40340-20, Ancra Fitting",
+,31,"900-2919, Suction Containers Supports",
+,32,"43449-01, Suction Containers",
+,33,"43056-01, Suction Containers Bag",
+,34,"6545-01-156-9112, Bag Medical Kit Level",
+,35,"B9154-(072)-5426-2R-6C, Net Draft Cover and Net Draft",
+,36,"1682A5100-1, Bag Equipment Rescue",
