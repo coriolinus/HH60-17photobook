@@ -1,0 +1,44 @@
+\documentclass[letterpaper,11pt,openany,oneside]{book}
+
+\makeatletter
+\def\removeduplicates#1#2{\begingroup
+  \let\@tempa#1%
+  \def\@tempb{}%
+  \@for\next:=\@tempa\do
+    {\@ifundefined{lstel@\next}
+      {\edef\@tempb{\@tempb,\next}
+       \expandafter\let\csname lstel@\next\endcsname\@empty}
+      {}%
+    }%
+  \edef\x{\endgroup\def\noexpand#2{\@tempb}}\x
+  \expandafter\strip@comma#2\@nil#2}
+\def\strip@comma,#1\@nil#2{\def#2{#1}}
+\makeatother
+
+\begin{document}
+% some labels on page 1
+\section{John} \label{john}
+john doe
+\section{Mary} \label{mary}
+mary sue
+
+%move to page 2
+\clearpage
+\section{George} \label{george}
+george weasley
+\section{Australia} \label{australia}
+crocodile dundee
+
+%new page, where the references are
+\section{References}
+	
+\def\alist{\pageref{john},\pageref{mary},\pageref{george},\pageref{australia},\pageref{australia},\pageref{john}}	
+\removeduplicates\alist\blist
+
+\show\blist
+\show\alist
+
+\removeduplicates\alist\alist
+\show\alist
+
+\end{document}
