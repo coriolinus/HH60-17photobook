@@ -4,7 +4,7 @@
 
 # the photobook itself. That shouldn't be versioned, in order to keep repository size down. 
 # If you're looking for the book in the repository, check out the most current release
-photobook.pdf
+*.pdf
 
 # Python bytecode
 *.pyc

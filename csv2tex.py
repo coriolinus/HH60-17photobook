@@ -148,6 +148,11 @@ def figBackref(figlabel, caption):
 	
 	ffl = figrefs[figlabel] # shorthand for the list of references to this figure
 	
+	lname = r"\backrefs" + hashlib.sha1(str(ffl).encode()).hexdigest()
+	caption += r"\def" + lname + '{'
+	caption += ','.join((r"\getpagerefnumber{" + hash + '}' for hash, nomen in ffl))
+	caption += '}\n'
+	
 	s = 's' if len(ffl) > 1 else ''
 	caption += r"This figure was referenced on page" + s + ' '
 	
@@ -155,18 +160,8 @@ def figBackref(figlabel, caption):
 		caption += r"\pageref{" + ffl[0][0] + r"}" # + r"\footnote{" + ffl[0][1] + "}"
 		return caption
 	
-	first = True
-	lff = []
-	for hash, nomen in reversed(ffl):
-		lff.append(r"\pageref{" + hash + r"}") # +  r"\footnote{" + nomen + "}")
-		if first:
-			first = False
-			lff.append(' and ')
-			if len(lff) > 2:
-				lff.append(',')
-		if hash != ffl[0][0]: #if it does equal, this is the first element
-			lff.append(', ')
-	caption += ''.join(reversed(lff))
+	caption += r"\createlinks" + lname
+	
 	return caption
 	
 def main():
