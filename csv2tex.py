@@ -140,13 +140,26 @@ def compSort(ll,c=[0],ci=False):
 			ret.sort(key=lambda x: (len(x[scol]) == 0, case(x[scol])))
 	return ret
 
+def unsha(o):
+	"latex doesn't like numbers in macro names. we name by sha. fix that. (latex labels are case sensitive)"
+	sha = hashlib.sha1(str(o).encode()).hexdigest().lower()
+	map = {str(n) : l for n, l in enumerate("ABCDEFGHIJ")}
+	ret = ''
+	for char in sha:
+		if char.isdigit():
+			ret += map[char]
+		else:
+			ret += char
+	return ret
+	
+	
 def genBackref(figlabel):
 	if figlabel not in figrefs:
 		return ''
 	
 	ffl = figrefs[figlabel] # shorthand for the list of references to this figure
 	
-	lname = r"\backrefs" + hashlib.sha1(str(ffl).encode()).hexdigest()
+	lname = r"\backrefs" + unsha(ffl)
 	refdef  = r"\def" + lname + '{'
 	refdef += ','.join((r"\getpagerefnumber{" + hash + '}' for hash, nomen in ffl))
 	refdef += '}\n'
@@ -162,7 +175,7 @@ def figBackref(figlabel, caption):
 	
 	ffl = figrefs[figlabel] # shorthand for the list of references to this figure
 	
-	lname = r"\backrefs" + hashlib.sha1(str(ffl).encode()).hexdigest()
+	lname = r"\backrefs" + unsha(ffl)
 #	caption += r"\def" + lname + '{'
 #	caption += ','.join((r"\getpagerefnumber{" + hash + '}' for hash, nomen in ffl))
 #	caption += '}\n'

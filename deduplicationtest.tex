@@ -40,6 +40,17 @@ crocodile dundee
 \section{References}
 	
 \def\alist{\getpagerefnumber{john},\getpagerefnumber{mary},\getpagerefnumber{george},\getpagerefnumber{australia},\getpagerefnumber{australia},\getpagerefnumber{john}}	
+
+\begin{figure}[htp]
+	\def\alist{\getpagerefnumber{john},\getpagerefnumber{mary},\getpagerefnumber{george},\getpagerefnumber{australia},\getpagerefnumber{australia},\getpagerefnumber{john}}	
+	
+	\def\backrefsDOOMOO{\getpagerefnumber{john},\getpagerefnumber{mary},\getpagerefnumber{george},\getpagerefnumber{australia},\getpagerefnumber{australia},\getpagerefnumber{mary}}
+	
+	\createlinks\backrefsDOOMOO
+		
+	\caption{Pages: \createlinks\alist \label{lower-console}}
+\end{figure}
+
 \createlinks\alist
 
 
