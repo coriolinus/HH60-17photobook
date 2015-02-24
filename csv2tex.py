@@ -139,6 +139,20 @@ def compSort(ll,c=[0],ci=False):
 		except ValueError:
 			ret.sort(key=lambda x: (len(x[scol]) == 0, case(x[scol])))
 	return ret
+
+def genBackref(figlabel):
+	if figlabel not in figrefs:
+		return ''
+	
+	ffl = figrefs[figlabel] # shorthand for the list of references to this figure
+	
+	lname = r"\backrefs" + hashlib.sha1(str(ffl).encode()).hexdigest()
+	refdef  = r"\def" + lname + '{'
+	refdef += ','.join((r"\getpagerefnumber{" + hash + '}' for hash, nomen in ffl))
+	refdef += '}\n'
+	
+	return refdef
+	
 	
 def figBackref(figlabel, caption):
 	if figlabel not in figrefs:
@@ -149,9 +163,9 @@ def figBackref(figlabel, caption):
 	ffl = figrefs[figlabel] # shorthand for the list of references to this figure
 	
 	lname = r"\backrefs" + hashlib.sha1(str(ffl).encode()).hexdigest()
-	caption += r"\def" + lname + '{'
-	caption += ','.join((r"\getpagerefnumber{" + hash + '}' for hash, nomen in ffl))
-	caption += '}\n'
+#	caption += r"\def" + lname + '{'
+#	caption += ','.join((r"\getpagerefnumber{" + hash + '}' for hash, nomen in ffl))
+#	caption += '}\n'
 	
 	s = 's' if len(ffl) > 1 else ''
 	caption += r"This figure was referenced on page" + s + ' '
@@ -233,6 +247,9 @@ def main():
 		for ref, fn, caption in fig_order:
 			print(r"\begin{figure}[htp]", file=fout)
 			print(r"\includegraphics[width=\textwidth,height=7in,keepaspectratio]{Images/" + fn + "}", file=fout)
+			gb = genBackref(ref)
+			if len(gb) > 0:
+				print(gb, file=fout)
 			print(r"\caption{" + figBackref(ref, caption) + r" \label{" + ref + "}}", file=fout)
 			print(r"\end{figure}", file=fout)
 			
