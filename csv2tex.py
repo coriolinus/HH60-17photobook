@@ -171,7 +171,7 @@ def figBackref(figlabel, caption):
 	if figlabel not in figrefs:
 		return caption
 	if len(caption) > 0:
-		caption += r"\\ \\ "
+		caption += r"\\ "
 	
 	ffl = figrefs[figlabel] # shorthand for the list of references to this figure
 	
@@ -180,8 +180,7 @@ def figBackref(figlabel, caption):
 #	caption += ','.join((r"\getpagerefnumber{" + hash + '}' for hash, nomen in ffl))
 #	caption += '}\n'
 	
-	s = 's' if len(ffl) > 1 else ''
-	caption += r"This figure was referenced on page" + s + ' '
+	caption += r"This figure was referenced on: "
 	
 	if len(ffl) == 1:
 		caption += r"\pageref{" + ffl[0][0] + r"}" # + r"\footnote{" + ffl[0][1] + "}"
