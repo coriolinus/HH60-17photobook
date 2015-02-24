@@ -177,6 +177,29 @@ anywhere, so long as it's avilable to people in general.
 Please include a line in the frontmatter saying you based your version off of mine, with a link to 
 this project's GitHub page. Technically, that's required by the license, but really, it's only polite.
 
+### Example Build
+If you're on a unix-like OS with standard tools already installed, you can follow this exact sequence of instructions to configure and build the current copy of the photobook in your current location:
+
+	# clone the repository
+	git clone https://github.com/coriolinus/HH60-17photobook.git .
+	git checkout master
+	# ensure latex is installed
+	wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+	tar -xzf install-tl-unx.tar.gz
+	cd install-tl*
+	sudo ./install-tl --lang en 
+	cd ..
+	export PATH=/usr/local/texlive/2014/bin/x86_64-linux:$PATH
+	latex --version
+	sudo tlmgr install titlepic graphics hyperref tools ms microtype xcolor caption morefloats latex graphics pdftex-def url oberdiek l3kernel l3packages
+	sudo tlmgr update --self --all
+	# build the .tex files from the .csv files
+	python3 csv2tex.py
+	# run this 3 times to ensure all .aux files are cleared
+	pdflatex photobook.tex
+	pdflatex photobook.tex
+	pdflatex photobook.tex
+
 ## Miscellaneous Notes
 
 One feature of this project which makes it more complex than it could have been is the fact that 
