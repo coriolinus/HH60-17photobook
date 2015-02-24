@@ -162,7 +162,7 @@ def genBackref(figlabel):
 	lname = r"\backrefs" + unsha(ffl)
 	refdef  = r"\def" + lname + '{'
 	refdef += ','.join((r"\getpagerefnumber{" + hash + '}' for hash, nomen in ffl))
-	refdef += '}\n'
+	refdef += '}'
 	
 	return refdef
 	
